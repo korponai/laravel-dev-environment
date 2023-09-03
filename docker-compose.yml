@@ -8,8 +8,8 @@ services:
         restart: unless-stopped
         ports:
             - 6379
-        mem_limit: 2048m
-        mem_reservation: 2048m
+        mem_limit: 512m
+        mem_reservation: 512m
         logging:
             driver: "json-file"
             options:
@@ -31,8 +31,8 @@ services:
             - MYSQL_USER=lumen
             - MYSQL_PASSWORD=lumen
             - TZ='Europe/Belgrade'
-        mem_limit: 2048m
-        mem_reservation: 2048m
+        mem_limit: 1024m
+        mem_reservation: 512m
         logging:
             driver: "json-file"
             options:
@@ -49,8 +49,8 @@ services:
             - POSTGRES_USER=lumen
             - POSTGRES_DB=lumen
             - TZ='Europe/Belgrade'
-        mem_limit: 2048m
-        mem_reservation: 2048m
+        mem_limit: 1024m
+        mem_reservation: 512m
         logging:
             driver: "json-file"
             options:
@@ -107,8 +107,8 @@ services:
         depends_on:
             - mysql
             - redis
-        mem_limit: 4096m
-        mem_reservation: 2048m
+        mem_limit: 1024m
+        mem_reservation: 512m
         logging:
             driver: "json-file"
             options:
@@ -124,8 +124,8 @@ services:
             - mysql
         depends_on:
             - mysql
-        mem_limit: 2048m
-        mem_reservation: 2048m
+        mem_limit: 512m
+        mem_reservation: 512m
         logging:
             driver: "json-file"
             options:
