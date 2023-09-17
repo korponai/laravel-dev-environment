@@ -63,6 +63,7 @@ services:
         ports:
             - 80:80
         environment:
+            - APP_ENV=dev
             - APP_URL=https://localhost/
             - APP_DIR=/opt/workdir/
             - GIT_HOST=${GIT_HOST}
