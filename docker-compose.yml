@@ -57,7 +57,7 @@ services:
                 max-size: "2m"
 
     backend:
-        image: danteyu/nginxunit-php82:dev-2023-08-26.0
+        image: danteyu/nginxunit-php82:dev-2023-11-09.1
         container_name: me-backend
         restart: unless-stopped
         ports:
